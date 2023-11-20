@@ -22,6 +22,12 @@ let etaUser;
 
 const sendButton = document.getElementById("send");
 
+// Creazione numero random carrozza
+
+const inputCarrozza = document.querySelector(".carrozzauser");
+
+let carrozzauser;
+
 // Definiamo i 0.21 € al km
 
 const prezzoOgniKm = 0.21;
@@ -43,6 +49,10 @@ sendButton.addEventListener ("click",
 
         const BigliettoNoSconto = kmUser * prezzoOgniKm;
 
+        var randomNumber = Math.floor(Math.random() * 10) + 1;
+            
+        document.getElementById("carrozza").innerHTML = randomNumber;
+
         // Applichiamo sconto del 20% per i minorenni
         
         if (etaUser <= 18) {
@@ -60,6 +70,12 @@ sendButton.addEventListener ("click",
         else {
             console.log("prezzo", BigliettoNoSconto)
             document.getElementById("mio_id").innerHTML = BigliettoNoSconto.toFixed(2) + euro;
+        
         }
-    }
+
+        }
+    
 )
+
+
+
