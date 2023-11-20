@@ -11,18 +11,26 @@
     />
   </head>
   <body>
-    <div>
-      <input
-        type="text"
-        class="nomeuser"
-        placeholder="Inserisci Nome e Cognome"
-      />
+    <div id="section-domande">
+      <div id="titoli">
+        <h2>Nome e Cognome</h2>
+        <h2>Km da percorrere</h2>
+        <h2>La tua età</h2>
+        <h2 id="andiamo-title">Andiamo!</h2>
+      </div>
+      <div id="domande">
+        <input
+          type="text"
+          class="nomeuser"
+          placeholder="Inserisci Nome e Cognome"
+        />
 
-      <input type="text" class="kmuser" placeholder="Inserisci i km" />
+        <input type="text" class="kmuser" placeholder="Inserisci i km" />
 
-      <input type="text" class="etauser" placeholder="Inserisci la tua eta" />
+        <input type="text" class="etauser" placeholder="Inserisci la tua eta" />
 
-      <button id="send">Invia</button>
+        <button id="send">Invia</button>
+      </div>
     </div>
     <div id="biglietto">
       <div class="section-biglietto">
@@ -49,7 +57,7 @@
       <div class="section-biglietto-1">
         <div class="section-orario">
           <p>Nome Passeggero</p>
-          <h1>Mario Rossi</h1>
+          <h1 id="passeggero-nome"></h1>
         </div>
         <div class="section-orario-3">
           <p>Prezzo</p>
