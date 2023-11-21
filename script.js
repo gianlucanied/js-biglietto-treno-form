@@ -37,6 +37,7 @@ const euro = " €";
 sendButton.addEventListener ("click",
 
     function() {
+
         let nomeUserInput = document.querySelector(".nomeuser");
         console.log("nome: ", nomeUserInput);
         document.getElementById("passeggero-nome").innerHTML = nomeUserInput.value;
@@ -52,6 +53,7 @@ sendButton.addEventListener ("click",
         var randomNumber = Math.floor(Math.random() * 10) + 1;
             
         document.getElementById("carrozza").innerHTML = randomNumber;
+
 
         // Applichiamo sconto del 20% per i minorenni
         
